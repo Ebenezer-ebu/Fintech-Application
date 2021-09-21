@@ -1,0 +1,31 @@
+{
+  "development": {
+    "username": "root",
+    "password": "1234",
+    "database": "fintech_database",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "dialectOptions": { "decimalNumbers": true }
+  },
+  "test": {
+    "username": "root",
+    "password": "1234",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "dialectOptions": { "decimalNumbers": true }
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "use_env_variable": "DATABASE_URL",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "dialectOptions": {
+      "decimalNumbers": true,
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
